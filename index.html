@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Article.</title>
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<!-- Side navigation -->
+	<div class="sidenav">
+		<div class="sidenav-items">
+			<a class="navbar-brand logo_h" href="index.html"><span><h1 class="logo_h-h1">FAJFARA</h1></span></a>
+			<nav class="navigationBar">
+				<a href="#">Contact</a>
+				<svg width="12" height="13" xmlns="http://www.w3.org/2000/svg">
+				  <path d="M5.843 4.912L10.255.6l1.397 1.43L7.24 6.344l4.312 4.412-1.43 1.397L5.81 7.74l-4.412 4.312L0 10.622 4.412 6.31.1 1.898 1.53.5l4.313 4.412z" fill="#111" fill-rule="nonzero"/>
+				</svg>
+				<a href="#" onclick="revealPage(this)" data-value="projects">Projects</a>
+				<svg width="12" height="13" xmlns="http://www.w3.org/2000/svg">
+					<path d="M5.843 4.912L10.255.6l1.397 1.43L7.24 6.344l4.312 4.412-1.43 1.397L5.81 7.74l-4.412 4.312L0 10.622 4.412 6.31.1 1.898 1.53.5l4.313 4.412z" fill="#111" fill-rule="nonzero"/>
+				</svg>
+				<a href="#" onclick="revealPage(this)" data-value="about">About</a>
+				<svg width="12" height="13" xmlns="http://www.w3.org/2000/svg">
+					<path d="M5.843 4.912L10.255.6l1.397 1.43L7.24 6.344l4.312 4.412-1.43 1.397L5.81 7.74l-4.412 4.312L0 10.622 4.412 6.31.1 1.898 1.53.5l4.313 4.412z" fill="#111" fill-rule="nonzero"/>
+				</svg>
+				<a href="#" onclick="revealPage(this)" data-value="landing">Home</a>
+			</nav>
+		</div>
+  	</div>
+  
+  	<!-- Page content -->
+  	<div class="main" id="main-content">
+		<div class="landing-page pages" id="landing" data-shown="true">
+			<h1>Welcome!</h1>
+			<div class="landing-page-content">
+				<div class="landing-page-content--text">
+					<div class="landing-page-content--text--main-text">
+						<div class="landing-page-content--text--main-text--subtitle">
+							<span>My name is</span>
+						</div>
+						<div class="landing-page-content--text--main-text--title">
+							<span>Anže Fajfar</span>
+						</div>
+						<div class="landing-page-content--text--main-text--paragraph">
+							<span>I am a junior web developer. My interest is also in software development for desktop and mobile.</span>
+						</div>
+						<div class="landing-page-content--text--main-text--button">
+							Learn more about me!
+						</div>
+					</div>
+				</div>
+				<div class="landing-page-content--compScene">
+					<div id="scene">
+						<img data-depth=".1" src="img/svg/computer-layer.svg" alt="Computer">
+						<img data-depth="1" src="img/svg/screens-layer.svg" alt="">
+						<img data-depth=".1" src="img/svg/people-layer.svg" alt="">
+						<img data-depth=".3" src="img/svg/folder-layer.svg" alt="">
+						<img data-depth=".5" src="img/svg/lock-layer.svg" alt="">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="about-page pages" id="about" data-shown="false">
+			<h1>About me</h1>
+		</div>
+
+		<div class="projects-page pages" id="projects" data-shown="false">
+			<h1>My projects</h1>
+			<div id="items">
+	
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/animations.js"></script>
+	<script src="js/randomGradient.js"></script>
+</body>
+</html>

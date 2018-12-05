@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+.main {
+  margin-left: 0px;
+  transition: margin-left .5s ease-in;
+  height: 100%;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  overflow: hidden; }
+
+.add-left-margin {
+  margin-left: 150px; }
+
+.overflow-auto {
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding-top: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .sidenav:hover {
+    box-shadow: 0 -20px 28px rgba(0, 0, 0, 0.25), 0 -20px 10px rgba(0, 0, 0, 0.22); }
+  .sidenav nav {
+    transform: rotate(-90deg);
+    width: 50rem;
+    position: absolute;
+    top: 47%;
+    left: -215%;
+    text-align: center;
+    opacity: 0; }
+    .sidenav nav a {
+      font-size: 1.5rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+      font-family: "Rubik", sans-serif;
+      text-decoration: none;
+      display: inline-block;
+      color: #111;
+      padding: 1rem;
+      transition: transform, background .1s ease-in; }
+    .sidenav nav a:hover {
+      background: -webkit-linear-gradient(left, #fcb045, #fd1d1d, #833ab4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.3); }
+  .sidenav .logo_h {
+    text-decoration: none;
+    color: #111;
+    display: inline-block;
+    font-family: "Rubik", sans-serif;
+    position: relative;
+    margin-top: 1.5rem;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .3s ease-in; }
+    .sidenav .logo_h h1 {
+      font-size: 24px;
+      font-weight: 700;
+      font-family: "Rubik", sans-serif; }
+    .sidenav .logo_h span {
+      position: relative;
+      display: block;
+      cursor: pointer; }
+    .sidenav .logo_h span:before, .sidenav .logo_h span:after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 4px;
+      top: 100%;
+      margin-top: -0.5px;
+      background: black; }
+    .sidenav .logo_h span:before {
+      left: 0px; }
+    .sidenav .logo_h span:after {
+      right: 2.5px;
+      background: #833ab4;
+      background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+      background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+      transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
+    .sidenav .logo_h span:hover:before {
+      background-color: #8EC5FC;
+      background: #833ab4;
+      background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+      background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+      width: 100%;
+      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+    .sidenav .logo_h span:hover:after {
+      background: transparent;
+      width: 100%;
+      transition: 0s; }
+    .sidenav .logo_h span:hover > .logo_h-h1 {
+      background: -webkit-linear-gradient(left, #fcb045, #fd1d1d, #833ab4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+.landing-page {
+  opacity: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(136, 220, 250, 0.5);
+  z-index: 10; }
+  .landing-page h1 {
+    font-family: "Rubik", sans-serif;
+    color: #ffffff;
+    font-size: 20rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
+  .landing-page-content {
+    height: 100%;
+    display: flex; }
+    .landing-page-content--text {
+      flex: 50%; }
+      .landing-page-content--text--main-text {
+        position: relative;
+        top: 45%;
+        left: 30%; }
+        .landing-page-content--text--main-text--subtitle {
+          font-size: 20px;
+          text-transform: uppercase;
+          margin-bottom: 1.2rem; }
+        .landing-page-content--text--main-text--title {
+          font-size: 50px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 1.2rem; }
+        .landing-page-content--text--main-text--paragraph {
+          width: 35rem;
+          font-size: 20px;
+          margin-bottom: 1.2rem;
+          opacity: .5; }
+        .landing-page-content--text--main-text--button {
+          padding: 0px 42px;
+          line-height: 50px;
+          background-color: #0062cc;
+          color: #fff;
+          display: inline-block;
+          border-radius: 5px;
+          font-size: 16px;
+          font-weight: 500;
+          transition: all 300ms linear 0s;
+          cursor: pointer; }
+    .landing-page-content--compScene {
+      flex: 50%; }
+      .landing-page-content--compScene #scene {
+        position: relative;
+        top: 20%;
+        left: 5%;
+        width: 40rem; }
+
+.about-page {
+  opacity: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  position: absolute;
+  top: 0; }
+
+.projects-page {
+  opacity: 0;
+  height: 200vh;
+  width: 100%;
+  background-color: purple;
+  z-index: 5;
+  position: absolute;
+  top: 0; }

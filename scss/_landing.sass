@@ -1,0 +1,66 @@
+.landing-page
+    opacity: 0
+    height: 100vh
+    width: 100%
+    background-color: rgba(136, 220, 250, .5)
+    z-index: 10
+
+    h1
+        font-family: $rubik
+        color: $white
+        font-size: 20rem
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 1
+    
+    &-content
+        height: 100%
+        display: flex
+
+        &--text
+            flex: 50%
+            &--main-text
+                position: relative
+                top: 45%
+                left: 30%
+                &--subtitle
+                    font-size: 20px
+                    text-transform: uppercase
+                    margin-bottom: 1.2rem
+                &--title
+                    font-size: 50px
+                    font-weight: 700
+                    text-transform: uppercase
+                    margin-bottom: 1.2rem
+                &--paragraph
+                    width: 35rem
+                    font-size: 20px
+                    margin-bottom: 1.2rem
+                    opacity: .5
+                &--button
+                    padding: 0px 42px
+                    line-height: 50px
+                    background-color: #0062cc
+                    color: #fff
+                    display: inline-block
+                    border-radius: 5px
+                    font-size: 16px
+                    font-weight: 500
+                    transition: all 300ms linear 0s
+                    cursor: pointer
+        &--compScene
+            flex: 50%
+            #scene
+                position: relative
+                top: 20%
+                left: 5%
+                width: 40rem
+
+
+
+    
+    
+
+            
