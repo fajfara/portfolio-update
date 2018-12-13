@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik')
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900')
 
 
 // Variables
@@ -6,7 +6,18 @@ $rubik: 'Rubik', sans-serif
 
 
 // Colors
-$white: #ffffff    
+$white: #ffffff   
+$black: #111111
+
+$orange: #D67A13  
+$light-blue: #BEECFF
+$blue: #00A8F2
+$white-blue: #E6F4F1
+
+$yellow: #FFD15E 
+$bright-blue: #0062cc
+
+$green-bright: #63FC97
 
 
 
@@ -25,6 +36,11 @@ $white: #ffffff
 .overflow-auto
   overflow-y: auto
   overflow-x: hidden
+
+.front
+  z-index: 99 !important
+.back
+  z-index: -1 !important
 
 @import "navigation"
 @import "landing"

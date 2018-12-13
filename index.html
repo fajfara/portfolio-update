@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Article.</title>
+	<title>Anže.</title>
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 	<!-- Side navigation -->
 	<div class="sidenav">
 		<div class="sidenav-items">
-			<a class="navbar-brand logo_h" href="index.html"><span><h1 class="logo_h-h1">FAJFARA</h1></span></a>
+			<a class="navbar-brand logo_h" href="index.html"><span>
+					<h1 class="logo_h-h1">FAJFARA</h1>
+				</span></a>
 			<nav class="navigationBar">
 				<a href="#">Contact</a>
 				<svg width="12" height="13" xmlns="http://www.w3.org/2000/svg">
-				  <path d="M5.843 4.912L10.255.6l1.397 1.43L7.24 6.344l4.312 4.412-1.43 1.397L5.81 7.74l-4.412 4.312L0 10.622 4.412 6.31.1 1.898 1.53.5l4.313 4.412z" fill="#111" fill-rule="nonzero"/>
+					<path d="M5.843 4.912L10.255.6l1.397 1.43L7.24 6.344l4.312 4.412-1.43 1.397L5.81 7.74l-4.412 4.312L0 10.622 4.412 6.31.1 1.898 1.53.5l4.313 4.412z"
+					 fill="#111" fill-rule="nonzero" />
 				</svg>
 				<a href="#" onclick="revealPage(this)" data-value="projects">Projects</a>
 				<svg width="12" height="13" xmlns="http://www.w3.org/2000/svg">
-					<path d="M5.843 4.912L10.255.6l1.397 1.43L7.24 6.344l4.312 4.412-1.43 1.397L5.81 7.74l-4.412 4.312L0 10.622 4.412 6.31.1 1.898 1.53.5l4.313 4.412z" fill="#111" fill-rule="nonzero"/>
+					<path d="M5.843 4.912L10.255.6l1.397 1.43L7.24 6.344l4.312 4.412-1.43 1.397L5.81 7.74l-4.412 4.312L0 10.622 4.412 6.31.1 1.898 1.53.5l4.313 4.412z"
+					 fill="#111" fill-rule="nonzero" />
 				</svg>
 				<a href="#" onclick="revealPage(this)" data-value="about">About</a>
 				<svg width="12" height="13" xmlns="http://www.w3.org/2000/svg">
-					<path d="M5.843 4.912L10.255.6l1.397 1.43L7.24 6.344l4.312 4.412-1.43 1.397L5.81 7.74l-4.412 4.312L0 10.622 4.412 6.31.1 1.898 1.53.5l4.313 4.412z" fill="#111" fill-rule="nonzero"/>
+					<path d="M5.843 4.912L10.255.6l1.397 1.43L7.24 6.344l4.312 4.412-1.43 1.397L5.81 7.74l-4.412 4.312L0 10.622 4.412 6.31.1 1.898 1.53.5l4.313 4.412z"
+					 fill="#111" fill-rule="nonzero" />
 				</svg>
 				<a href="#" onclick="revealPage(this)" data-value="landing">Home</a>
 			</nav>
 		</div>
-  	</div>
-  
-  	<!-- Page content -->
-  	<div class="main" id="main-content">
-		<div class="landing-page pages" id="landing" data-shown="true">
-			<h1>Welcome!</h1>
+	</div>
+
+	<!-- Page content -->
+	<div class="main" id="main-content">
+		<div class="landing-page pages front" id="landing" data-shown="true">
+			<h1>WELCOME!</h1>
 			<div class="landing-page-content">
 				<div class="landing-page-content--text">
 					<div class="landing-page-content--text--main-text">
@@ -48,32 +57,94 @@
 							<span>I am a junior web developer. My interest is also in software development for desktop and mobile.</span>
 						</div>
 						<div class="landing-page-content--text--main-text--button">
-							Learn more about me!
+							<a href="https://github.com/fajfara">Go to Github</a>
 						</div>
 					</div>
 				</div>
 				<div class="landing-page-content--compScene">
 					<div id="scene">
-						<img data-depth=".1" src="img/svg/computer-layer.svg" alt="Computer">
+						<img data-depth="0.2" src="img/svg/programmer/computer-layer.svg" alt="">
+						<img data-depth="0.2" src="img/svg/programmer/desk-layer.svg" alt="">
+						<img data-depth="0.4" src="img/svg/programmer/dude-layer.svg" alt="">
+						<img data-depth="0.7" src="img/svg/programmer/the-stack-layer.svg" alt="">
+						<!-- <img data-depth=".1" src="img/svg/computer-layer.svg" alt="Computer">
 						<img data-depth="1" src="img/svg/screens-layer.svg" alt="">
 						<img data-depth=".1" src="img/svg/people-layer.svg" alt="">
 						<img data-depth=".3" src="img/svg/folder-layer.svg" alt="">
-						<img data-depth=".5" src="img/svg/lock-layer.svg" alt="">
+						<img data-depth=".5" src="img/svg/lock-layer.svg" alt=""> -->
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 
-		<div class="about-page pages" id="about" data-shown="false">
-			<h1>About me</h1>
-		</div>
-
-		<div class="projects-page pages" id="projects" data-shown="false">
-			<h1>My projects</h1>
-			<div id="items">
-	
+		<div class="about-page pages back" id="about" data-shown="false">
+			<div class="about-page-top-row">
+				<div class="about-page-top-row--left">
+					<img src="img/svg/about.svg" alt="">
+				</div>
+				<div class="about-page-top-row--right">
+					<p>
+						My real name is Anže, but you can also call me “Fajfara”. I am a junior software developer. I am from Kranj,
+						Slovenia and currently i am attending FRI. Bellow is some more information about me, my skills, my interest, etc.
+					</p>
+				</div>
 			</div>
+
+			<div class="about-page-skills-text-row">
+				+ SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS +
+				SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS
+				+ SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS +
+				SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS + SKILLS
+			</div>
+
+			<div class="about-page-skills-svg">
+				<img src="img/svg/skills.svg" alt="">
+			</div>
+
+			<div class="about-page-interests-text-row">
+				+ INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS +
+				INTERESTS + INTERESTS + INTERESTS +
+				INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS +
+				INTERESTS + INTERESTS + INTERESTS + INTERESTS
+				+ INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS +
+				INTERESTS + INTERESTS + INTERESTS +
+				INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS + INTERESTS
+			</div>
+
+			<div class="about-page-interests">
+				<p>
+					I listen to a lot of music, from hard rock to lo-fi, there is always something i like. In my free time i also like
+					to play electric guitar.
+				</p>
+
+				<div class="future-music-projects">
+					<h1>RESERVED SPACE FOR MUSIC PROJECTS</h1>
+				</div>
+			</div>
+
+			<div class="about-page-social-text-row">
+				+ SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL +
+				SOCIAL + SOCIAL + SOCIAL +
+				SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL +
+				SOCIAL + SOCIAL + SOCIAL + SOCIAL
+				+ SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL +
+				SOCIAL + SOCIAL + SOCIAL +
+				SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL + SOCIAL
+			</div>
+
+			<div class="about-page-social-icons">
+				<h1>MY SOCIAL MEDIA</h1>
+				<div class="about-page-social-icons--icons">
+					<i class="fab fa-github"></i>
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-twitter-square"></i>
+					<i class="fab fa-google-plus-g"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="projects-page pages back" id="projects" data-shown="false">
 		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
@@ -82,4 +153,5 @@
 	<script src="js/animations.js"></script>
 	<script src="js/randomGradient.js"></script>
 </body>
+
 </html>

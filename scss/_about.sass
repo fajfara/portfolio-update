@@ -1,8 +1,123 @@
 .about-page
     opacity: 0
-    height: 100vh
     width: 100%
-    background-color: black
-    z-index: 10
+    background: $yellow
+    z-index: 5
     position: absolute
     top: 0
+    padding-bottom: 4rem
+    &-top-row
+
+        display: flex
+        height: 20rem
+        &--left
+            width: 10%
+            height: 100%
+            padding-top: 2rem
+            img
+                position: relative
+                left: 50%
+                transform: translateX(-50%)
+                width: 50%
+        &--right
+            width: 90%
+            padding-right: 1rem
+            
+            p 
+                &::before
+                    display: block
+                    content: ''
+                    background: $black
+                    opacity: .5
+                    height: 2px
+                    position: relative
+                    width: 103%
+                    left: -2rem
+                    top: -3rem
+
+                position: relative
+                top: 50%
+                font-size: 2.3rem
+                color: $black
+                padding: 1rem
+    &-skills-text-row
+        width: 1000rem
+        font-size: 1.9rem
+        font-style: italic
+        opacity: 0.6
+        color: $white
+        background-color: $black
+        padding: .5rem 0 .5rem 0
+        margin-top: 14rem
+    
+    &-skills-svg
+        width: 75%
+        margin: 0 auto
+    
+    &-interests-text-row
+        width: 1000rem
+        font-size: 1.9rem
+        font-style: italic
+        opacity: 0.6
+        color: $white
+        background-color: $black
+        padding: .5rem 0 .5rem 0
+        margin-top: 5rem
+
+    &-interests
+        width: 90%
+        margin: 0 auto
+        margin-top: 7rem
+            
+        p 
+            &::before
+                display: block
+                content: ''
+                background: $black
+                opacity: .5
+                height: 2px
+                position: relative
+                width: 103%
+                left: -2rem
+                top: -3rem
+
+            position: relative
+            font-size: 2.3rem
+            color: $black
+            padding: 1rem
+        
+        .future-music-projects
+            width: 41rem
+            padding: 4rem
+            margin: 0 auto
+            height: 5rem
+            background-color: #111111
+            color: #fff
+            opacity: 0.6
+    
+    &-social-text-row
+        width: 1000rem
+        font-size: 1.9rem
+        font-style: italic
+        opacity: 0.6
+        color: $white
+        background-color: $black
+        padding: .5rem 0 .5rem 0
+        margin-top: 5rem
+    
+    &-social-icons
+        width: 40%
+        margin: 0 auto
+        text-align: center
+        margin-top: 5rem
+        h1
+            font-size: 2.5rem
+        &--icons
+            margin-top: 2rem
+            font-size: 5rem
+            i
+                padding: 1rem
+                &:hover
+                    color: $white
+                    cursor: pointer
+

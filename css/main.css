@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900");
 .main {
   margin-left: 0px;
   transition: margin-left .5s ease-in;
@@ -14,6 +14,12 @@
   overflow-y: auto;
   overflow-x: hidden; }
 
+.front {
+  z-index: 99 !important; }
+
+.back {
+  z-index: -1 !important; }
+
 .sidenav {
   height: 100%;
   width: 0px;
@@ -25,8 +31,6 @@
   padding-top: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-  .sidenav:hover {
-    box-shadow: 0 -20px 28px rgba(0, 0, 0, 0.25), 0 -20px 10px rgba(0, 0, 0, 0.22); }
   .sidenav nav {
     transform: rotate(-90deg);
     width: 50rem;
@@ -44,9 +48,11 @@
       display: inline-block;
       color: #111;
       padding: 1rem;
-      transition: transform, background .1s ease-in; }
+      transition: all .3s ease-in; }
     .sidenav nav a:hover {
-      background: -webkit-linear-gradient(left, #fcb045, #fd1d1d, #833ab4);
+      background: #009FFF;
+      background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);
+      background: linear-gradient(to left, #ec2F4B, #009FFF);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transform: scale(1.3); }
@@ -106,12 +112,14 @@
   opacity: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(136, 220, 250, 0.5);
-  z-index: 10; }
+  background-color: #BEECFF;
+  z-index: 10;
+  display: block; }
   .landing-page h1 {
     font-family: "Rubik", sans-serif;
     color: #ffffff;
-    font-size: 20rem;
+    font-size: 13rem;
+    font-weight: 700;
     position: absolute;
     top: 0;
     left: 50%;
@@ -125,54 +133,169 @@
       .landing-page-content--text--main-text {
         position: relative;
         top: 45%;
-        left: 30%; }
+        left: 30%;
+        color: #ffffff; }
         .landing-page-content--text--main-text--subtitle {
           font-size: 20px;
           text-transform: uppercase;
-          margin-bottom: 1.2rem; }
+          margin-bottom: 1.2rem;
+          background-color: #111;
+          width: 7rem;
+          padding: 0.5rem; }
         .landing-page-content--text--main-text--title {
           font-size: 50px;
           font-weight: 700;
           text-transform: uppercase;
-          margin-bottom: 1.2rem; }
+          color: #111111;
+          margin-bottom: 1.2rem;
+          background-color: #ffffff;
+          width: 22rem;
+          padding: 1rem; }
         .landing-page-content--text--main-text--paragraph {
           width: 35rem;
+          background-color: #111;
+          padding: 2rem;
           font-size: 20px;
           margin-bottom: 1.2rem;
-          opacity: .5; }
+          opacity: .8; }
         .landing-page-content--text--main-text--button {
           padding: 0px 42px;
           line-height: 50px;
           background-color: #0062cc;
-          color: #fff;
           display: inline-block;
           border-radius: 5px;
           font-size: 16px;
           font-weight: 500;
           transition: all 300ms linear 0s;
           cursor: pointer; }
+          .landing-page-content--text--main-text--button a {
+            text-decoration: none;
+            color: #fff; }
     .landing-page-content--compScene {
       flex: 50%; }
       .landing-page-content--compScene #scene {
         position: relative;
-        top: 20%;
-        left: 5%;
-        width: 40rem; }
+        top: 30%;
+        left: 15%;
+        width: 35rem; }
 
 .about-page {
   opacity: 0;
-  height: 100vh;
   width: 100%;
-  background-color: black;
-  z-index: 10;
+  background: #FFD15E;
+  z-index: 5;
   position: absolute;
-  top: 0; }
+  top: 0;
+  padding-bottom: 4rem; }
+  .about-page-top-row {
+    display: flex;
+    height: 20rem; }
+    .about-page-top-row--left {
+      width: 10%;
+      height: 100%;
+      padding-top: 2rem; }
+      .about-page-top-row--left img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%; }
+    .about-page-top-row--right {
+      width: 90%;
+      padding-right: 1rem; }
+      .about-page-top-row--right p {
+        position: relative;
+        top: 50%;
+        font-size: 2.3rem;
+        color: #111111;
+        padding: 1rem; }
+        .about-page-top-row--right p::before {
+          display: block;
+          content: '';
+          background: #111111;
+          opacity: .5;
+          height: 2px;
+          position: relative;
+          width: 103%;
+          left: -2rem;
+          top: -3rem; }
+  .about-page-skills-text-row {
+    width: 1000rem;
+    font-size: 1.9rem;
+    font-style: italic;
+    opacity: 0.6;
+    color: #ffffff;
+    background-color: #111111;
+    padding: .5rem 0 .5rem 0;
+    margin-top: 14rem; }
+  .about-page-skills-svg {
+    width: 75%;
+    margin: 0 auto; }
+  .about-page-interests-text-row {
+    width: 1000rem;
+    font-size: 1.9rem;
+    font-style: italic;
+    opacity: 0.6;
+    color: #ffffff;
+    background-color: #111111;
+    padding: .5rem 0 .5rem 0;
+    margin-top: 5rem; }
+  .about-page-interests {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 7rem; }
+    .about-page-interests p {
+      position: relative;
+      font-size: 2.3rem;
+      color: #111111;
+      padding: 1rem; }
+      .about-page-interests p::before {
+        display: block;
+        content: '';
+        background: #111111;
+        opacity: .5;
+        height: 2px;
+        position: relative;
+        width: 103%;
+        left: -2rem;
+        top: -3rem; }
+    .about-page-interests .future-music-projects {
+      width: 41rem;
+      padding: 4rem;
+      margin: 0 auto;
+      height: 5rem;
+      background-color: #111111;
+      color: #fff;
+      opacity: 0.6; }
+  .about-page-social-text-row {
+    width: 1000rem;
+    font-size: 1.9rem;
+    font-style: italic;
+    opacity: 0.6;
+    color: #ffffff;
+    background-color: #111111;
+    padding: .5rem 0 .5rem 0;
+    margin-top: 5rem; }
+  .about-page-social-icons {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5rem; }
+    .about-page-social-icons h1 {
+      font-size: 2.5rem; }
+    .about-page-social-icons--icons {
+      margin-top: 2rem;
+      font-size: 5rem; }
+      .about-page-social-icons--icons i {
+        padding: 1rem; }
+        .about-page-social-icons--icons i:hover {
+          color: #ffffff;
+          cursor: pointer; }
 
 .projects-page {
   opacity: 0;
   height: 200vh;
   width: 100%;
-  background-color: purple;
+  background-color: #63FC97;
   z-index: 5;
   position: absolute;
   top: 0; }

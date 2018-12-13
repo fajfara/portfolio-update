@@ -22,41 +22,46 @@ const checkOpened = (d) => {
     let mainViewPages = mainView.getElementsByClassName("pages");
 
     for (let i = 0; i < mainViewPages.length; i++) {
-        for (let j = 0; j < mainViewPages.length; j++){
-            mainViewPages[j].style.display = "block";
-        }
         let currItem = mainViewPages[i];
         if (currItem.getAttribute("data-shown") == "true") {
             currItem.setAttribute("data-shown", "false")
-            anime.remove('#'+currItem.getAttribute("id"));
+            anime.remove('#' + currItem.getAttribute("id"));
             anime({
-                targets: '#'+currItem.getAttribute("id"),
-                opacity: [0, 1],
-                translateY: ['0rem', '-150rem'],
+                targets: '#' + currItem.getAttribute("id"),
+                translateY: ['0rem', '-200rem'],
+                /* opacity: [0, 1], */
                 easing: 'easeOutSine',
-                duration: 4000
+                duration: 2000,
+                delay: 250
             });
+            currItem.classList.remove("front")
+            currItem.classList.add("back");
+
         };
+
         mainContent.classList.remove("overflow-auto");
-        
+
     }
+
     for (let i = 0; i < mainViewPages.length; i++) {
-        if (mainViewPages[i].getAttribute("id") == d.getAttribute("data-value")){
+        if (mainViewPages[i].getAttribute("id") == d.getAttribute("data-value")) {
             let currItem = mainViewPages[i];
-            if(d.getAttribute("data-value") == "projects"){
+            if (d.getAttribute("data-value") == "projects" || d.getAttribute("data-value") == "about") {
                 mainContent.classList.add("overflow-auto");
             }
-            anime.remove('#'+ currItem.getAttribute("id"));
+            currItem.classList.remove("back");
+            currItem.classList.add("front");
+            anime.remove('#' + currItem.getAttribute("id"));
             anime({
-                targets: '#'+currItem.getAttribute("id"),
+                targets: '#' + currItem.getAttribute("id"),
+                translateY: ['-200rem', '0rem'],
                 opacity: [0, 1],
-                translateY: ['-1000rem', '0rem'],
                 easing: 'easeOutSine',
                 duration: 2000
             });
             mainViewPages[i].setAttribute("data-shown", "true")
         }
-        
+
     }
 }
 
